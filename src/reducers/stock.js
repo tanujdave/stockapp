@@ -2,8 +2,8 @@ import * as types from "../constants/ActionTypes";
 
 const mergeStockData = (oldData, newData) => {
     return oldData
-        .map(s => newData.find(t => t.ticker == s.ticker) || s)
-        .concat(newData.filter(s => !oldData.find(t => t.ticker == s.ticker)));
+        .map(s => newData.find(t => t.ticker === s.ticker) || s)
+        .concat(newData.filter(s => !oldData.find(t => t.ticker === s.ticker)));
 };
 
 const initialState = {

@@ -4,16 +4,16 @@ import TickerList from "../components/TickerList";
 
 const LoadingList = () => {
     return (
-        <a className="pu rs xj ux" href="#">
+        <a className="pu rs xj ux">
             <span className="awy">Loading...</span>
         </a>
     );
 };
 
-const LoadingError = error => {
+const LoadingError = (error) => {
     return (
-        <a className="pu rs xj ux" href="#">
-            <span className="awy">{error}</span>
+        <a className="pu rs xj ux">
+            <span className="awy">{error.error}</span>
         </a>
     );
 };

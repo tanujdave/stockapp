@@ -133,36 +133,13 @@ export const highchartConfig = {
         }
     },
     rangeSelector: {
+        inputEnabled: false,
+        selected: 1,
         buttonTheme: {
-            fill: "#505053",
-            stroke: "#000000",
-            style: {
-                color: "#CCC"
-            },
-            states: {
-                hover: {
-                    fill: "#707073",
-                    stroke: "#000000",
-                    style: {
-                        color: "white"
-                    }
-                },
-                select: {
-                    fill: "#000003",
-                    stroke: "#000000",
-                    style: {
-                        color: "white"
-                    }
-                }
-            }
-        },
-        inputBoxBorderColor: "#505053",
-        inputStyle: {
-            backgroundColor: "#333",
-            color: "silver"
+            visibility: 'hidden'
         },
         labelStyle: {
-            color: "silver"
+            visibility: 'hidden'
         }
     },
 
@@ -198,15 +175,5 @@ export const highchartConfig = {
     textColor: "#C0C0C0",
     contrastTextColor: "#F0F0F3",
     maskColor: "rgba(255,255,255,0.3)",
-    rangeSelector: {
-        inputEnabled: false,
-        selected: 1,
-        buttonTheme: {
-            visibility: 'hidden'
-        },
-        labelStyle: {
-            visibility: 'hidden'
-        }
-    },
     series: []
 };

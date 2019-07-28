@@ -5,9 +5,6 @@ import StockChart from "../components/StockChart";
 import { getHistoryStockData } from "../utils/stockDbStorage";
 
 class TickerList extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     handleSelectTicker = e => {
         e.preventDefault();
@@ -41,7 +38,6 @@ class TickerList extends React.Component {
             <React.Fragment>
                 <a
                     className={tickerCs}
-                    href="#"
                     onClick={this.handleSelectTicker}
                 >
                     <span className="awy">{data.ticker}</span>

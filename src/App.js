@@ -8,7 +8,7 @@ class App extends Component {
             <React.Fragment>
                 <header>
                     <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                        <a className="navbar-brand" href="#">
+                        <a className="navbar-brand">
                             Stock App
                         </a>
                     </nav>

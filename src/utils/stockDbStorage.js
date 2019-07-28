@@ -77,8 +77,8 @@ const appendToLocalDB = newData => {
 
 const mergeStockData = (oldData, newData) => {
     return oldData
-        .map(s => newData.find(t => t.ticker == s.ticker) || s)
-        .concat(newData.filter(s => !oldData.find(t => t.ticker == s.ticker)));
+        .map(s => newData.find(t => t.ticker === s.ticker) || s)
+        .concat(newData.filter(s => !oldData.find(t => t.ticker === s.ticker)));
 };
 
 const getLiveStockData = data => {

@@ -2,7 +2,7 @@ import { stockDataReceived } from "../actions";
 import { getLiveStockData } from "../utils/stockDbStorage";
 
 const setupSocket = dispatch => {
-    const socket = new WebSocket("ws://stocks.mnet.website");
+    const socket = new WebSocket("wss://stocks.mnet.website");
     socket.onopen = () => {
         console.log("Socket connection open");
     };

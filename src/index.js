@@ -10,8 +10,7 @@ import setupSocket from "./sockets";
 import reducers from "./reducers";
 
 const store = createStore(reducers);
-
-const socket = setupSocket(store.dispatch);
+setupSocket(store.dispatch);
 
 ReactDOM.render(
     <Provider store={store}>
